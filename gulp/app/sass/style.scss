@@ -1,0 +1,462 @@
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('../fonts/GTWalsheimRegular.woff2') format('woff2'),
+        url('../fonts/GTWalsheimRegular.woff') format('woff'),
+        url('../fonts/GTWalsheimRegular.svg#GTWalsheimRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('../fonts/GTWalsheimBold.woff2') format('woff2'),
+        url('../fonts/GTWalsheimBold.woff') format('woff'),
+        url('../fonts/GTWalsheimBold.svg#GTWalsheimBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin:0;padding:0; 
+}
+
+body {
+    padding: 1em;
+    font-family: "gt walsheim", sans-serif;
+    color: #002546;
+    max-width: 100%;
+    /*
+    background: url(https://media.giphy.com/media/Ck0Ars4JrrEBO/giphy.gif);*/
+    background-size:15%;
+}
+a {
+	color: #33b1ef;
+}
+.vgain {
+	color: #33b1ef;
+	padding:0.2em;
+}
+.dark-bg {
+	background: #002546;
+}
+.fifty {
+	font-size: 40% !important;
+	vertical-align: middle;
+}
+.navigation ul {
+    list-style: none;
+}
+.navigation {
+    display: grid;
+    grid-template-rows: 25vh;
+    text-align: center;
+    margin-left: 4px;
+}
+.navigation * {
+    display: grid;
+    align-items: center;
+    justify-content: center;margin-left:-4px;
+}
+.navigation a:nth-child(1) {
+    background: url(../img/v.svg) no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.navigation a:nth-child(2) {
+    background: url(../img/g.svg) no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.navigation a:nth-child(3) {
+    background: url(../img/a.svg) no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.navigation a:nth-child(4) {
+    background: url(../img/i.svg) no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.navigation a:nth-child(5) {
+    background: url(../img/n.svg) no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.navigation a {
+    color:#002546;
+    text-decoration:none;
+    font-size: 1.3em;
+    font-weight: bold;
+	text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+}
+.navigation a:hover {
+    background-position: center 1em;
+    transition: all 0.3s ease;
+}
+
+footer {
+    background: #002546;
+    font-weight: 100;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+    padding: 2em;
+    display: grid;
+}
+footer * {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+footer .logo {
+    width:10em;
+    height:auto;
+    margin-left:auto;
+}
+footer p {
+    color: #f1efff;
+    font-size: 0.8em;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-family: "gt walsheim", sans-serif;
+}
+.copy {
+    font-size:1.2em;
+}
+
+/* TYPOGRAPHY */
+h1 {
+    font-size: 3em;
+    font-family: "League Spartan", "Gt Walsheim", sans-serif;
+    text-transform: uppercase;
+    line-height: 1em;
+    margin-bottom: 0.2em;
+}
+h2 {
+    font-size:2em;
+    font-family: "Baskerville", serif;
+    line-height: 1.1em;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 0.6em;
+}
+h3 {
+    font-size: 1em;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5em;
+}
+p {
+    font-family: "libre baskerville";
+    font-size: 1em;
+}
+    
+    /* NUTS Styling */
+article.protein {
+    display: grid;
+    grid-template-rows: repeat(auto, 1fr);
+    grid-gap: 2em;
+    padding: 15em 0em 10em 0em;
+}
+article.supps {
+    display: grid;
+    grid-template-rows: repeat(auto, 1fr);
+    grid-gap: 2em;
+    padding: 15em 0em 10em 0em;
+}
+article.home {
+	display: grid;
+    grid-template-rows: repeat(auto, 1fr);
+    grid-gap: 2em;
+    padding: 15em 0em 10em 0em;
+}
+article div {
+	padding: 2em;
+}
+section {
+    display: grid;
+	grid-column-start: 1;
+	grid-column-end: 3;
+    grid-template-rows: repeat(auto, 1fr);
+    grid-gap: 2em;
+    padding: 5em 0em 10em 0em;
+}
+article img, section img {
+    max-width: 100%; max-height: 100%; outline: 0;object-fit: cover;
+	align-self: center;
+}
+.listbox {
+	padding:2em;
+}
+.title {
+    text-align: center;
+    margin-top: -5em;
+    border-radius: 0% 100%;
+    background-color: #e0faff;
+	grid-column-start: 1;
+}
+.title.protein {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e7/DNA_simple.svg);
+    background-size:50%;
+	background-repeat: no-repeat;
+    background-position: center -390%;
+}
+.title.carbs {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/ff/Toicon-icon-avocado-harvest.svg);
+    background-size:60%;
+	background-repeat: no-repeat;
+    background-position: center 80%;
+}
+.title.fats {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/70/Toicon-icon-avocado-eat.svg);
+    background-size:60%;
+	background-repeat: no-repeat;
+    background-position: center 80%;
+}
+.title.supps {
+    background-image: url(../img/supps.svg);
+    background-size:100%;
+	background-repeat: no-repeat;
+    background-position: -30% 60%;
+}
+.introtext {
+	margin-top: -4em;
+	padding-bottom: 4em; width:80%;
+}
+.table li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.table li:last-child {
+    font-weight:bold;
+}
+.subnav {
+	display: grid;grid-gap: 1em;padding-bottom: 2em;
+	grid-template-columns: auto auto auto;
+}
+.subnav.supps {
+	display: grid;grid-gap: 1em;padding-bottom: 2em;
+	grid-template-columns: auto auto auto auto;
+}
+.subnav a {
+	display: grid;
+	align-self: center;
+	padding: 0.5em;
+	color: #002546;
+	text-decoration: none;
+	transition: all 0.1s ease;
+}
+.subnav a:hover {
+	background-color:#e0faff;border-top-color:#e0faff;border-left-color: #e0faff;
+	transition: all 0.1s ease;
+	transform: scale(1.05);
+}
+.subnav a:active {
+	transition: all 0.1s ease;
+	transform: scale(1.03);
+}
+.walnuts, #walnuts, .walnuts img {border-bottom: 4px solid #f4b15b;}
+.chia, #chia, .chia img {border-bottom: 4px solid #585341;}
+.spirulina, #spirulina, .spirulina img {border-bottom: 4px solid #234d30;}
+.almonds, #almonds,.almonds img {border-bottom: 4px solid #b87c3c;}
+.flax, #flax, .flax img {border-bottom: 4px solid #923600;}
+
+.oats, #oats, .oats img {border-bottom: 4px solid #eee6be; }
+.wildrice, #wildrice, .wildrice img {border-bottom: 4px solid #ba1119;}
+.quinoa, #quinoa, .quinoa img {border-bottom: 4px solid #cbd2cf; }
+
+#creatine, .creatine {border-bottom: 4px solid #fbd2ff; }
+#beta-alanine, .beta-alanine {border-bottom: 4px solid #6a9b48;}
+#bcaa, .bcaa {border-bottom: 4px solid #f43838; }
+#glutamine, .glutamine {border-bottom: 4px solid #33b0ee; }
+
+.nuts, .nuts img {
+    border: 4px solid #ffe6b1;
+}
+.nuts h3 {
+    color: #f88848;
+}
+/* SEEDS Styling */
+.seeds, .seeds img {
+    border: 4px solid #ffb7a3;
+}
+.seeds h3 {
+    color: #cf194d;
+}
+/* beans Styling */
+.beans, .beans img {
+    border: 4px solid #aea3fd;
+}
+.beans h3 {
+    color: #00539e;
+}
+
+main, .navigation {
+		max-width:60em;margin:auto;
+}
+
+/* Desktops */
+@media (min-width: 1025px) {
+.navigation a:hover {
+    font-size: 2em;
+    transform: scale(1.1);
+}
+.navigation {
+	grid-template-columns: repeat(5,1fr);
+}
+article.home {
+	grid-template-columns: auto auto;
+}
+article.protein, section {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+article.supps, section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+footer {
+	grid-template-columns: 1fr 2fr 2fr;
+	grid-gap: 5em;
+}
+}
+
+
+/* Most of the Smartphones Mobiles (Portrait) */
+@media (min-width: 767px) and (max-width: 1024px) {
+article.protein {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+article.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+body {
+	text-align: center;
+}
+.navigation {
+    grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	align-content: center;grid-gap: 1em;
+}
+.navigation a:first-child {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.navigation a, .navigation a:hover {
+	transform: scale(1) !important;
+	border-bottom: 1px solid blue;
+	padding: 2em;
+}
+.navigation a:hover  {
+	background-position: center -105% !important;
+}
+.navigation a:nth-child(2), .navigation a:nth-child(3), .navigation a:nth-child(4), .navigation a:nth-child(5) {
+	background-size:5em;
+}
+.introtext, .title {
+	margin:0 auto !important;
+	width:80%;
+	padding-bottom: 1em;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+footer {
+	grid-template-columns: 1fr !important;
+	grid-template-rows: 1fr 1fr 1fr;
+	text-align: left !important;
+}
+.title.carbs, .title.fats, .title.protein {
+	background-image: none;
+}
+img {
+	margin: auto;
+}
+.home div {
+	padding: 2em 0em 2em 0em;
+}
+.home img {
+	width: 100%; object-fit: cover;
+}
+}
+
+/* Most of the Smartphones Mobiles (Portrait) */
+@media (max-width: 766px) {
+article.protein {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+article.home {
+    display: grid;
+    grid-template-columns: 1fr !important;
+	padding: 6em 0em 6em 0em;
+}
+
+body {
+	text-align: center;
+}
+.navigation {
+    grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	align-content: center;grid-gap: 1em;
+}
+.navigation a:first-child {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.navigation a, .navigation a:hover {
+	transform: scale(1) !important;
+	border-bottom: 1px solid blue;
+	padding: 2em;
+}
+.navigation a:hover  {
+	background-position: center -105% !important;
+}
+.navigation a:nth-child(2), .navigation a:nth-child(3), .navigation a:nth-child(4), .navigation a:nth-child(5) {
+	background-size:5em;
+}
+.introtext, .title {
+	margin:0 auto !important;
+	width:80%;
+	padding-bottom: 1em;
+}
+footer {
+	grid-template-columns: 1fr !important;
+	grid-template-rows: 1fr 1fr auto;
+	padding: 5em;
+}
+footer img {
+	width:100% !important;
+}
+.title.carbs, .title.fats, .title.protein {
+	background-image: none;
+}
+img {
+	margin: auto;
+}
+.home div {
+	padding: 2em 0em 2em 0em; border-right:none;border-top:none;border-bottom:none;
+}
+.home div:not(:first-child) {
+	text-align: left;
+	padding: 0em 2em 0em 2em;;
+}
+div.nuts, div.seeds, div.beans {
+	margin-bottom: 10em;
+}
+img.nuts, img.seeds, img.beans {
+	margin-bottom: 3em;
+}
+.home img {
+	width: 100%; object-fit: cover;
+}
+h4.introtext {
+	margin-bottom: 5em !important;
+}
+img.seeds {
+	grid-row-start: 7;
+}
+}
